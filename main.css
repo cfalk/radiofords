@@ -1,0 +1,152 @@
+body {
+ font-family: "Ubuntu";
+ text-align: center;
+ background-color: maroon;
+ min-width: 475px;
+}
+
+a {
+ text-decoration: none;
+ color: inherit;
+}
+
+#logoContainer {
+ margin-top:12px;
+ display: inline-block;
+ width: 300px;
+ font-size: 40px;
+ letter-spacing: 10px;
+ font-family: "Shadows Into Light";
+ background: url("http://upload.wikimedia.org/wikipedia/commons/f/ff/Headphones_icon.svg") no-repeat;
+ background-size: 20px 20px;
+ background-position: 120px 20px;
+}
+
+#menuContainer {
+ margin-bottom: 10px;
+ margin: 0 auto;
+ word-spacing: 30px;
+ width:80%;
+
+border-bottom: 3px solid maroon;
+ border-radius:15px;
+}
+
+#menuContainer a {
+ font-family: "Raleway";
+ font-size:24px;
+ padding-left: 20px;
+ padding-right: 20px;
+}
+
+#menuContainer a:hover {
+ border-top-left-radius: 5px;
+ border-top-right-radius: 5px;
+ background-color: #FFD6CC;
+}
+
+.date {
+ margin:0px;
+ width:100%;
+ text-align:right;
+ font-style: oblique;
+}
+
+.menuGroup {
+ display: inline-block;
+}
+
+#contentContainer {
+ text-align:left;
+ font-size: 18px;
+ margin:0 auto;
+ padding: 40px;
+ padding-top: 10px;
+ max-width: 500px;
+}
+
+.airtimeWidget {
+ margin: 0 auto;
+ position: relative;
+ border-left:2px solid #550000;
+ border-right:2px solid #550000;
+ border-radius: 10px;
+ color: white;
+ background-color: maroon;
+}
+
+.airtimeWidget tr {
+ color: white;
+}
+
+.airtimeWidget ul{
+ text-align:left;
+ list-style:none;
+}
+
+
+#playerContainer{
+ margin: 0 auto;
+ position: relative;
+ width: 100%;
+ text-align:center;
+}
+
+#playerController{
+ display: inline-block;
+ height:30px;
+ background-color:maroon;
+ padding: 10px;
+ text-align:center;
+}
+
+.playerButton {
+ cursor: pointer;
+ position:relative;
+ margin: 5px;
+ display: inline-block;
+ vertical-align: middle;
+}
+
+.playerButton:hover {
+ color:yellow;
+}
+
+#playButton {
+ width: 0px;
+ height: 0px;
+ border-left: 20px solid white;
+ border-top: 10px solid transparent;
+ border-bottom: 10px solid transparent;
+ border-right: none;
+}
+
+#pauseButton {
+ width: 5px;
+ height: 20px;
+ border-left:4px solid white;
+ border-right:4px solid white;
+}
+
+#globalContainer {
+ position: relative;
+ display: inline-block;
+ width: 80%;
+ margin: 0 auto;
+ 
+ background-color: white;
+ border-radius: 15px; 
+ border-left: 2px solid #550000;
+ border-right: 2px solid #550000;
+}
+
+#copyrightContainer {
+ color:white;
+ margin-top: 15px;
+}
+
+#haverLogo {
+ display: inline-block;
+ width:120px;
+ margin:10px;
+}

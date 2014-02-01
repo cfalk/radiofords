@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+#headerLiveHolder ul li.current, #headerLiveTrackHolder {
+  min-width: 280px;
+  margin: 20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  }
+ 
+  #headerLiveHolder ul li span {
+	position:absolute;
+	right:0px;
+	}
+  #headerLiveHolder ul li span#time-elapsed:before {
+	content: "e.";
+  }
+  #headerLiveHolder ul li span#time-remaining:before {
+	content: "r.";
+  }
+  #headerLiveTrackHolder span.current{
+  font-weight:bold;
+  position:absolute;
+	right:10px;
+	font-size: 11px;
+  }
+  #headerLiveTrackHolder span#time-elapsed {
+	top: 20px;
+  }
+  #headerLiveTrackHolder span#time-elapsed:before {
+	content: "E:";
+  }
+  #headerLiveTrackHolder span#time-remaining:before {
+	content: "R:";
+  }
+	  
+
+#onAirToday {
+  min-width:280px;
+  margin: 20px;
+  margin-bottom:15px;
+  }
+  #onAirToday h3 {
+    margin:0;
+    padding:0 10px;
+    font-size:16px;
+    line-height:28px;
+    }
+  #onAirToday table {
+    clear: both;
+    padding: 0;
+	}
+	#onAirToday table tbody {
+	  font-size:12px;
+      }
+	  #onAirToday table tbody tr {
+		height: 30px;
+		}
+		#onAirToday table tbody tr td {
+		  height: 30px;
+		  padding-left: 10px;
+		  font-weight:bold;
+		  }
+          #onAirToday table tbody tr td a {
+			text-decoration:none;
+			}
+			#onAirToday table tbody tr td a:hover {
+			text-decoration:underline;
+			}
+		  #onAirToday table tbody tr:last-child td {
+			}
+		  #onAirToday table tbody tr td.time {
+			font-weight:normal;
+			}	
+/* = PROGRAM SCHEDULE ---------------- */
+
+  /*
+  + Center Column */
+  #scheduleTabs {
+	}
+    #scheduleTabs ul {
+      overflow:hidden;
+      height:28px;
+	  list-style-type:none;
+	  margin:0;
+	  padding:0;
+      }
+      #scheduleTabs ul li {
+        float:left;
+        height:28px;
+		margin:0;
+	  	padding:0;
+        }
+        #scheduleTabs ul li a {
+          display:block;
+		  float:left;
+          height:25px;
+          padding:0 10px;
+		  margin-top:3px;
+          font-size:12px;
+		  font-weight:bold;
+		  line-height:25px;
+		  text-decoration:none;
+          }
+        #scheduleTabs ul li a:hover {
+		  text-decoration:none;
+          }
+        #scheduleTabs ul li.ui-tabs-selected a {
+          height:27px;
+          margin-top:0px;
+          line-height:27px;
+          }
+    #scheduleTabs table {
+      clear:both;
+      padding:0px;
+	  width:100%;
+      }
+      #scheduleTabs table thead {
+        height:35px;
+        font-size:12px; line-height:35px;
+        }
+        #scheduleTabs table thead tr {
+          height:35px;
+          }
+          #scheduleTabs table thead tr td {
+            padding-left:10px;
+            font-size:11px; text-transform:uppercase;
+            }
+      #scheduleTabs table tfoot {
+        }
+      #scheduleTabs table tbody {
+        font-size:13px; font-weight:bold;
+        }
+        #scheduleTabs table tbody tr {
+          height:30px;
+          }
+          #scheduleTabs table tbody tr td {
+            height:30px;
+            padding-left:10px;
+            }
+            #scheduleTabs table tbody tr td h4 {
+              font-size:12px;
+			  margin:0;
+			  padding:0;
+              }
+            #scheduleTabs table tbody tr td ul {
+			  list-style-type:none;
+              }
+              #scheduleTabs table tbody tr td ul li {
+                float:left;
+                height:30px ;
+                padding:0 2px;
+                font-size:12px; font-weight:normal; line-height:30px ;
+                }
+                #scheduleTabs table tbody tr td ul li a {
+                  height:30px ;
+                  margin:0px ; padding:0px ;
+                  font-size:12px; ; font-weight:normal ; text-transform:uppercase; line-height:30px ;
+                  }
+                #scheduleTabs table tbody tr td ul li a:hover {
+                  text-decoration:underline;
+                  }
+
+#scheduleTabs.ui-tabs .ui-tabs-hide {
+    display: none;
+}
+	  
