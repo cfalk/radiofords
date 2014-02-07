@@ -5,7 +5,7 @@
 
     var defaults = {
         updatePeriod: 20, //seconds
-        sourceDomain: "http://localhost/", //where to get show status from
+        sourceDomain: "http://radiofords/", //where to get show status from
         text: {onAirToday:"On air today"},
         showLimit: 5
     };

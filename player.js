@@ -1,12 +1,12 @@
 $(document).ready(function(){
 $("#headerLiveTrackHolder").airtimeLiveTrackInfo({
-    sourceDomain: "http://chestnut.fig.haverford.edu/",
+    sourceDomain: "http://airtime.radiofords.com/",
     text: {onAirNow:"On Air Now", offline:"Offline", current:"Current", next:"Next"},
     updatePeriod: 60 //seconds
 });
 
 $("#onAirToday").airtimeShowSchedule({
-    sourceDomain: "http://chestnut.fig.haverford.edu/",
+    sourceDomain: "http://airtime.radiofords.com/",
     text: {onAirToday:"On Air Today"},
     updatePeriod: 60, //seconds
     showLimit: 10
@@ -16,8 +16,8 @@ $("#onAirToday").airtimeShowSchedule({
 $("#player").jPlayer({
   ready: function () {
   $(this).jPlayer("setMedia", {
-   mp3: "http://chestnut.fig.haverford.edu:8000/airtime_128.mp3",
-   oga: "http://chestnut.fig.haverford.edu:8000/airtime_128"
+   mp3: "http://airtime.radiofords.com:8000/airtime_128.mp3",
+   oga: "http://airtime.radiofords.com:8000/airtime_128"
    }).jPlayer("play");
    },
  
