@@ -2,13 +2,39 @@ body {
  font-family: "Ubuntu";
  text-align: center;
  background-color: maroon;
- min-width: 475px;
+ min-width:500px;
 }
 
 a {
  text-decoration: none;
- color: inherit;
+ color: red;
 }
+
+.tumblr_posts {
+ text-align:center;
+ padding:0px;
+ list-style-type:none
+}
+
+.tumblr_post {
+ border-bottom: 1px solid maroon;
+ margin-top:10px;
+ margin-bottom:10px;
+}
+
+.tumblr_text_post {
+ text-align:justify;
+}
+
+.tumblr_caption {
+ font-size:14px;
+}
+
+.tumblr_posts img{
+ border-radius:5px;
+ width:100%;
+}
+
 
 #logoContainer {
  margin-top:12px;
@@ -18,8 +44,13 @@ a {
  letter-spacing: 10px;
  font-family: "Shadows Into Light";
  background: url("http://upload.wikimedia.org/wikipedia/commons/f/ff/Headphones_icon.svg") no-repeat;
- background-size: 20px 20px;
- background-position: 120px 20px;
+ background-size: 28px 25px;
+ background-position: 122px 10px;
+ cursor:default;
+ user-select:none;
+ -moz-user-select:none;
+ -webkit-user-select:none;
+ -ie-user-select:none;
 }
 
 #menuContainer {
@@ -34,6 +65,7 @@ border-bottom: 3px solid maroon;
 
 #menuContainer a {
  font-family: "Raleway";
+ color:black;
  font-size:24px;
  padding-left: 20px;
  padding-right: 20px;
@@ -131,7 +163,7 @@ border-bottom: 3px solid maroon;
 #globalContainer {
  position: relative;
  display: inline-block;
- width: 80%;
+ width: 70%;
  margin: 0 auto;
  
  background-color: white;
@@ -149,4 +181,23 @@ border-bottom: 3px solid maroon;
  display: inline-block;
  width:120px;
  margin:10px;
+}
+
+
+.followLinks {
+ position:absolute;
+ left:20px;
+ top: 10px;
+ width: 40px;
+}
+
+.followLinks img {
+ width:100%;
+ border-radius:10px;
+ margin-bottom:20px;
+ opacity:0.8;
+}
+
+.followLinks img:hover {
+ opacity:1;
 }
