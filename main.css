@@ -1,8 +1,12 @@
 body {
- font-family: "Ubuntu";
+ font-family: "Source Sans Pro";
  text-align: center;
  background-color: maroon;
- min-width:500px;
+ margin:0px;
+}
+
+iframe { /* Used to make sure tumblr content doesn't overflow. */
+ max-width:100%;
 }
 
 a {
@@ -42,10 +46,6 @@ a {
  width: 300px;
  font-size: 40px;
  letter-spacing: 10px;
- font-family: "Shadows Into Light";
- background: url("http://upload.wikimedia.org/wikipedia/commons/f/ff/Headphones_icon.svg") no-repeat;
- background-size: 28px 25px;
- background-position: 122px 10px;
  cursor:default;
  user-select:none;
  -moz-user-select:none;
@@ -56,19 +56,17 @@ a {
 #menuContainer {
  margin-bottom: 10px;
  margin: 0 auto;
- word-spacing: 30px;
+ word-spacing: 15px;
  width:80%;
 
-border-bottom: 3px solid maroon;
+ border-bottom: 3px solid maroon;
  border-radius:15px;
 }
 
 #menuContainer a {
- font-family: "Raleway";
  color:black;
- font-size:24px;
- padding-left: 20px;
- padding-right: 20px;
+ font-size:2em;
+ padding:0px 5px;
 }
 
 #menuContainer a:hover {
@@ -95,16 +93,20 @@ border-bottom: 3px solid maroon;
  padding: 40px;
  padding-top: 10px;
  max-width: 500px;
+ box-sizing:border-box;
 }
 
 .airtimeWidget {
- margin: 0 auto;
  position: relative;
- border-left:2px solid #550000;
- border-right:2px solid #550000;
- border-radius: 10px;
+ margin: 0 auto;
+ padding:0px 5px;
  color: white;
+ box-sizing:border-box;
  background-color: maroon;
+}
+
+#status-current-show {
+ padding: 0px 20px;
 }
 
 .airtimeWidget tr {
@@ -126,7 +128,6 @@ border-bottom: 3px solid maroon;
 
 #playerController{
  display: inline-block;
- height:30px;
  background-color:maroon;
  padding: 10px;
  text-align:center;
@@ -165,9 +166,9 @@ border-bottom: 3px solid maroon;
  display: inline-block;
  width: 70%;
  margin: 0 auto;
- 
+
  background-color: white;
- border-radius: 15px; 
+ border-radius: 15px;
  border-left: 2px solid #550000;
  border-right: 2px solid #550000;
 }
@@ -200,4 +201,105 @@ border-bottom: 3px solid maroon;
 
 .followLinks img:hover {
  opacity:1;
+}
+
+#logo {
+ margin-top:20px;
+ margin-bottom:15px;
+ height: 75px;
+}
+
+#staffList {
+ list-style:none;
+ text-align:center;
+ line-height:30px;
+}
+
+.staffRole {
+ font-style:oblique;
+ opacity:0.8;
+ font-size:14px;
+}
+
+/* Google Form Styling */
+#ss-form {
+ text-align:center;
+ width:50%;
+ margin:30px auto;
+}
+#ss-form input {
+ padding:0.8em;
+ margin-bottom:1em;
+ background-color:#fef;
+ border:0px;
+ border-bottom:2px solid #fee;
+}
+#ss-form #ss-submit {
+ width:100%;
+ font-size:1.2em;
+ background-color:maroon;
+ color:white;
+ cursor:pointer;
+ opacity:1;
+}
+#ss-form #ss-submit:hover {
+ opacity:0.6;
+}
+#navigation-table {
+ width:100%;
+}
+
+@media screen and (max-width: 850px) {
+
+ #contentContainer {
+  padding:10px 0px;
+ }
+
+ .airtimeWidget {
+ }
+
+ #globalContainer {
+  width:100%;
+  display:block;
+  border-radius:0px;
+  border-size: 10px;
+  box-sizing:border-box;
+  margin:0px;
+ }
+
+ #menuContainer {
+  border-radius:0px;
+ }
+ .menuGroup {
+  padding:0px;
+ }
+
+ .followLinks {
+  height:40px;
+  width:initial;
+ }
+
+ .followLinks img {
+  width:initial;
+  height:100%;
+ }
+
+}
+
+@media screen and (max-width: 450px) {
+
+ .followLinks {
+  position:relative;
+  width:100%;
+  margin-top:1em;
+  left:initial;
+  top:initial;
+  height:5em;
+ }
+
+ .followLinks img {
+  padding:5px;
+  box-sizing:border-box;
+ }
+
 }

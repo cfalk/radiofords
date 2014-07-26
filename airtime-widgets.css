@@ -6,33 +6,10 @@
   padding-top:10px;
   padding-bottom:10px;
   }
- 
-  #headerLiveHolder ul li span {
-	position:absolute;
-	right:0px;
-	}
-  #headerLiveHolder ul li span#time-elapsed:before {
-	content: "e.";
-  }
-  #headerLiveHolder ul li span#time-remaining:before {
-	content: "r.";
-  }
+
   #headerLiveTrackHolder span.current{
-  font-weight:bold;
-  position:absolute;
-	right:10px;
-	font-size: 11px;
+  display:none;
   }
-  #headerLiveTrackHolder span#time-elapsed {
-	top: 20px;
-  }
-  #headerLiveTrackHolder span#time-elapsed:before {
-	content: "E:";
-  }
-  #headerLiveTrackHolder span#time-remaining:before {
-	content: "R:";
-  }
-	  
 
 #onAirToday {
   min-width:280px;
@@ -70,7 +47,7 @@
 			}
 		  #onAirToday table tbody tr td.time {
 			font-weight:normal;
-			}	
+			}
 /* = PROGRAM SCHEDULE ---------------- */
 
   /*
@@ -163,4 +140,4 @@
 #scheduleTabs.ui-tabs .ui-tabs-hide {
     display: none;
 }
-	  
+

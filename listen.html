@@ -5,15 +5,13 @@
 WHRC | Listen
 </title>
 
-
+<meta name="viewport" content="width=device-width">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="jquery.jplayer.js"></script>
 <script src="jquery.showinfo.js"></script>
 <script src="player.js"></script>
 
-<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" text="text/css" href="main.css" />
 <link rel="stylesheet" text="text/css" href="airtime-widgets.css" />
@@ -23,16 +21,17 @@ WHRC | Listen
 
 <body>
 <div id="globalContainer">
- <div id="logoContainer">
+<img id="logo" src="logo_maroon.png">
+<!-- <div id="logoContainer">
   WHRC
- </div>
+ </div>-->
  <div id="menuContainer">
   <div class="menuGroup">
    <a href="index.html">Home</a>
    <a href="listen.html">Listen</a>
   </div>
   <div class="menuGroup">
-   <a href="join.html">Join</a>
+   <a href="contact.html">Contact</a>
    <a href="about.html">About</a>
   </div>
  </div>
@@ -49,6 +48,39 @@ WHRC | Listen
 <div id="headerLiveTrackHolder" class="airtimeWidget"></div>
 <div id="onAirToday" class="airtimeWidget"></div>
 
+<!-- -->
+<form action="https://docs.google.com/forms/d/1tZp0lmdLN-yECZTWSvG6kyGEVrKnBJt4uDSRIgTfWkQ/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1601397523"><div class="ss-q-title">Have a song request?
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk"></span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1601397523" value="" class="ss-q-short" id="entry_1601397523" dir="auto" aria-label="Have a song request?  " aria-required="true" required="" title="">
+<div class="error-message" id="1775013656_errorMessage"></div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1098571928"><div class="ss-q-title">What&#39;s your name?
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+<span class="ss-required-asterisk"></span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+<input type="text" name="entry.1098571928" value="" class="ss-q-short" id="entry_1098571928" dir="auto" aria-label="What&#39;s your name?  " aria-required="true" required="" title="">
+<div class="error-message" id="679809032_errorMessage"></div>
+</div></div></div>
+<input type="hidden" name="draftResponse" value="[,,&quot;-3932813163295719663&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+
+<input type="hidden" name="fbzx" value="-3932813163295719663">
+
+<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+<input type="submit" name="submit" value="Send!" id="ss-submit">
+</td>
+</tr></tbody></table></div></ol></form>
+<!-- Google Form -->
+
+
 </div>
 </div>
 
@@ -59,7 +91,7 @@ WHRC | Listen
 </div>
 
 <div id="copyrightContainer">
- &copy;2013 WHRC Radio 
+ &copy;2014 WHRC Radio
 </div>
 <a href="http://haverford.edu">
  <img id="haverLogo" src="http://www.haverford.edu/foundation/images/Haverford-College-Wordmark-White.png"/>
