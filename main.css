@@ -267,6 +267,12 @@ a {
  width:100%;
 }
 
+@media screen and (min-width: 450px) {
+ #largePlayButton {
+  display:none;
+ }
+}
+
 @media screen and (max-width: 850px) {
 
  #contentContainer {
@@ -305,6 +311,17 @@ a {
 }
 
 @media screen and (max-width: 450px) {
+
+ #largePlayButton {
+  display:fixed;
+  position:absolute;
+  width:100%;
+  padding:2.5em 0em;
+  font-size:2em;
+  cursor:pointer;
+  background-color:maroon;
+  color:white;
+ }
 
  .followLinks {
   position:relative;
