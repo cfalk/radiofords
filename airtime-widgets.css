@@ -1,10 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 #headerLiveHolder ul li.current, #headerLiveTrackHolder {
-  min-width: 280px;
-  margin: 20px;
-  padding-top:10px;
-  padding-bottom:10px;
+  width:100%;
+  padding: 1em;
+  opacity:0.8;
   }
 
   #headerLiveTrackHolder span.current{

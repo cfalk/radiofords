@@ -145,9 +145,8 @@ a {
 }
 
 #playerController{
- display: inline-block;
  background-color:maroon;
- padding: 10px;
+ padding: 1em;
  text-align:center;
 }
 
@@ -267,6 +266,13 @@ a {
  width:100%;
 }
 
+.full-button {
+  text-align:center;
+  font-style:oblique;
+  color:maroon;
+  background-color:rgba(0,0,0,0.025);
+}
+
 @media screen and (min-width: 450px) {
  #largePlayButton {
   display:none;
@@ -277,9 +283,6 @@ a {
 
  #contentContainer {
   padding:10px 0px;
- }
-
- .airtimeWidget {
  }
 
  #globalContainer {

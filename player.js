@@ -20,7 +20,7 @@ $("#player").jPlayer({
       oga: "http://airtime.radiofords.com:8000/airtime_160"
     }).jPlayer("play");
    },
- 
+
   ended: function (event) {
     $(this).jPlayer("play");
     $("#largePlayButton").remove();
@@ -31,11 +31,11 @@ $("#player").jPlayer({
  });
 
 $(".playPauseButton").click(function() {
- swap_pause();	
+ swap_pause();
 })
 
 $("#muteButton").click(function() {
- swap_mute();	
+ swap_mute();
 })
 
 function swap_pause() {
@@ -43,7 +43,7 @@ function swap_pause() {
     $('#player').jPlayer('play');
     $("#playButton").attr("id", "pauseButton")
   } else {
-    $('#player').jPlayer('pause'); 
+    $('#player').jPlayer('pause');
     $("#pauseButton").attr("id", "playButton")
   }
   $("#largePlayButton").remove();
@@ -53,7 +53,7 @@ function swap_mute() {
   if ($('#player').data().jPlayer.options.muted) {
     $('#player').jPlayer('unmute');
     $("#muteButton").html("Mute");
-  } else { $('#player').jPlayer('mute'); 
+  } else { $('#player').jPlayer('mute');
     $("#muteButton").html("Unmute")
   }
 }
@@ -62,6 +62,9 @@ function swap_mute() {
 if (typeof muteOnLoad !== "undefined") {
   $("#muteButton").trigger("click");
 }
+
+
+
 
 });
 
